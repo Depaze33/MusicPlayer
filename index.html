@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link href="extraSmall.css" rel="stylesheet" media="only screen and (min-width: 0px) and (max-width: 600px)" />
+    <link href="small.css" rel="stylesheet" media="only screen and (min-width: 600px) and (max-width: 768px )" />
+    <link href="medium.css" rel="stylesheet" media="only screen and (min-width: 768px) and (max-width : 976px )" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Basic&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Seaweed+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <section id="principalSection">
+        <header>
+            <section class="top">
+                <section class="mediaPlayGeneral">
+                    <section id="playController">
+
+                        <button id="left"><img class="playIcon" src="img/arrowcircleleft_111066.svg"
+                                alt="play left"></button>
+                        <button id="play"><img class="playIcon" src="img/play-circle_icon-icons.com_69988.svg"
+                                alt="play"></button>
+                        <button id="right"><img class="playIcon" src="img/arrow_right_circle_icon_136934.svg"
+                                alt="play right"></button>
+                    </section>
+
+                    <section id="volController">
+                        <button id="volMin"> <img class="volIcon" src="img/volume_down_fill_icon_159385.svg"
+                                alt=""></button>
+                        <input id="rangeVol" class="range" type="range">
+                        <button id="volMax"><img class="volIcon" src="img/volume_up_fill_icon_159382.svg"
+                                alt=""></button>
+                    </section>
+                </section>
+
+
+                <section id="musicControlerPrincipal">
+                    <section id="musicControler">
+                        <article id="text">
+                            <p>Nom de l'artiste <br>
+                                Titre de la chanson
+                            </p>
+                        </article>
+                        <input id="rangeMusic" class="range" type="range">
+                    </section>
+                    <section id="recherch">
+                        <article class="search-container">
+                            <img id="loupe" src="img/loupe.png" alt="">
+                            <input id="search" type="search" placeholder="Search...">
+                        </article>
+                    </section>
+                </section>
+
+
+        </header>
+
+        <main>
+            <section id="principalContainer">
+
+                <article class="choice">
+                    <button id="music">Music</button>
+                    <button id="video">Video</button>
+                    <button id="podcast">Podcast</button>
+                </article>
+
+                <section class="sectionMusic">
+                    <article class="music" id="musicOne">
+                        <img src="img/1.jpg" alt="">
+                        <h2>Titre</h2>
+                        <p>Nom Artiste</p>
+                    </article>
+                    <article class="music" id="musicTwo">
+                        <img src="img/2.jpg" alt="">
+                        <h2>Titre</h2>
+                        <p>Nom Artiste</p>
+                    </article>
+                    <article class="music" id="musicThree">
+                        <img src="img/3.jpg" alt="">
+                        <h2>Titre</h2>
+                        <p>Nom Artiste</p>
+                    </article>
+                    <article class="music" id="musicFour">
+                        <img src="img/4.jpg" alt="">
+                        <h2>Titre</h2>
+                        <p>Nom Artiste</p>
+                    </article>
+                    <article class="music" id="musicFive">
+                        <img src="img/5.jpg" alt="">
+                        <h2>Titre</h2>
+                        <p>nom artiste</p>
+                    </article>
+                    <article class="music" id="musicSix">
+                        <img src="img/6.jpg" alt="">
+                        <h2>Titre</h2>
+                        <p>Nom artiste</p>
+                    </article>
+                    <article class="music" id="musicSeven">
+                        <img src="img/7.jpg" alt="">
+                        <h2>Titre</h2>
+                        <p>Nom Artiste</p>
+                    </article>
+                    <article class="music" id="musicHeight">
+                        <img src="img/1.jpg" alt="">
+                        <h2>Titre</h2>
+                        <p>Nom artiste</p>
+                    </article>
+                </section>
+            </section>
+
+            <audio id="mediaplayer" controls src="music/Blue_Skies.mp3"></audio>
+
+        </main>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
