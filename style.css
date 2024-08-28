@@ -140,6 +140,11 @@
         text-align: center;
     }
 
+    .music:hover{
+        border: 1px solid var(--colorText);
+        box-shadow: 0 0.625em 2em  var(--colorText);
+        box-sizing: border-box;
+    }
     img {
         width: 98%;
         height: auto;
@@ -160,10 +165,11 @@
         
     }
 
-    .sectionMusic 
-    p,h2{
+    .sectionMusic p, .sectionMusic h2 {
         color: var(--colorText);
-    }
+      }
+
+    
 
    
 
